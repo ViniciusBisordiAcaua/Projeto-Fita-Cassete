@@ -43,8 +43,8 @@ Impossivel gravar as musicas nessa fita.
 
 ## Integrantes
 
-* **Integrante 1:** Caio
-* **Integrante 2:** Helen
+* **Integrante 1:** Caio Henrique Santos Carvalho / RA: 1042540
+* **Integrante 2:** Helen Santana de Araujo Teixeira / RA: 10742524
 * **Integrante 3:** Vinicius Bisordi Acauã / RA: 10739883
 
 ## Divisão das atividades
