@@ -1,0 +1,106 @@
+CASOS DE TESTE - PROJETO FITA CASSETE
+
+========================================
+TESTE 1 - EXEMPLO DO ENUNCIADO
+========================================
+
+Entrada:
+
+2
+30 4
+3 11
+4 45
+13 45
+6 8
+60 6
+20 44
+4 36
+7 18
+13 8
+9 6
+8 12
+
+Resultado esperado:
+
+Caso:1
+
+Lado A
+3m 11s
+4m 45s
+6m 8s
+
+Lado B
+13m 45s
+
+Caso:2
+
+Impossivel gravar as musicas nessa fita.
+
+
+========================================
+TESTE 2 - DISTRIBUICAO EXATA
+========================================
+
+Entrada:
+
+1
+20 4
+4 0
+6 0
+3 0
+7 0
+
+Resultado esperado:
+
+Lado A: 4m 0s + 6m 0s
+Lado B: 3m 0s + 7m 0s
+
+Os dois lados ficam com exatamente 10 minutos.n
+
+
+========================================
+TESTE 3 - NAO CABE NA FITA
+========================================
+
+Entrada:
+
+1
+10 3
+4 0
+4 0
+4 0
+
+Resultado esperado:
+
+Impossivel gravar as musicas nessa fita.
+
+
+========================================
+TESTE 4 - UMA MUSICA
+========================================
+
+Entrada:
+
+1
+10 1
+4 30
+
+Resultado esperado:
+
+A música deve ser colocada em um dos lados da fita.
+
+
+========================================
+TESTE 5 - MUSICA MAIOR QUE UM LADO
+========================================
+
+Entrada:
+
+1
+20 2
+11 0
+5 0
+
+Resultado esperado:
+
+Impossivel gravar as musicas nessa fita.
