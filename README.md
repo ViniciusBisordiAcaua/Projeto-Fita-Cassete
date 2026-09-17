@@ -49,7 +49,7 @@ Impossivel gravar as musicas nessa fita.
 
 ## Divisão das atividades
 
-### Integrante 1 – Entrada e modelagem
+### Caio – Entrada e modelagem
 
 Responsável por:
 
@@ -57,7 +57,7 @@ Responsável por:
 * representação das músicas;
 * tratamento e preparação dos dados.
 
-### Integrante 2 – Algoritmo
+### Vinicius – Algoritmo
 
 Responsável por:
 
@@ -66,7 +66,7 @@ Responsável por:
 * verificação da capacidade dos lados A e B;
 * análise da solução.
 
-### Integrante 3 – Saída e testes
+### Helen – Saída e testes
 
 Responsável por:
 
@@ -77,10 +77,11 @@ Responsável por:
 
 ## Tecnologia utilizada
 
-* Java
+* C
 * Git
 * GitHub
 * GitHub Codespaces
+* VsCode
 
 ## Estrutura do projeto
 
