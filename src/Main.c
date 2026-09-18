@@ -8,7 +8,8 @@ typedef struct {
     int duracaoSegundos;
 } Musica;
 
-// Função do LeitorArquivo.c
+
+// Função implementada no LeitorArquivo.c
 int lerCaso(
     FILE *arquivo,
     int *duracaoFita,
@@ -16,7 +17,8 @@ int lerCaso(
     Musica musicas[]
 );
 
-// Função do Solver.c
+
+// Função implementada no Solver.c
 int resolver(
     Musica musicas[],
     int quantidade,
@@ -24,12 +26,13 @@ int resolver(
     int lado[]
 );
 
+
 int main(void) {
 
     FILE *arquivo = fopen("entrada/tape.in", "r");
 
     if (arquivo == NULL) {
-        printf("Erro ao abrir o arquivo tape.in.\n");
+        printf("Erro ao abrir entrada/tape.in\n");
         return 1;
     }
 
@@ -41,6 +44,7 @@ int main(void) {
         return 1;
     }
 
+
     for (int caso = 1; caso <= quantidadeCasos; caso++) {
 
         int duracaoFita;
@@ -49,17 +53,23 @@ int main(void) {
         Musica musicas[MAX_MUSICAS];
         int lado[MAX_MUSICAS];
 
+
+        // Lê um caso do tape.in
         if (!lerCaso(
                 arquivo,
                 &duracaoFita,
                 &quantidadeMusicas,
-                musicas)) {
+                musicas
+            )) {
 
             printf("Erro ao ler o caso %d.\n", caso);
+
             fclose(arquivo);
             return 1;
         }
 
+
+        // Chama o Solver
         int possivel = resolver(
             musicas,
             quantidadeMusicas,
@@ -67,7 +77,9 @@ int main(void) {
             lado
         );
 
+
         printf("Caso:%d\n", caso);
+
 
         if (!possivel) {
 
@@ -80,6 +92,7 @@ int main(void) {
             for (int i = 0; i < quantidadeMusicas; i++) {
 
                 if (lado[i] == 1) {
+
                     printf(
                         "%dm %ds\n",
                         musicas[i].minutos,
@@ -88,11 +101,13 @@ int main(void) {
                 }
             }
 
+
             printf("Lado B\n");
 
             for (int i = 0; i < quantidadeMusicas; i++) {
 
                 if (lado[i] == 2) {
+
                     printf(
                         "%dm %ds\n",
                         musicas[i].minutos,
@@ -102,8 +117,12 @@ int main(void) {
             }
         }
 
-        printf("\n");
+
+        if (caso < quantidadeCasos) {
+            printf("\n");
+        }
     }
+
 
     fclose(arquivo);
 

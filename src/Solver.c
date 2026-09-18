@@ -17,8 +17,8 @@ int backtracking(
     int capacidadeLado,
     int lado[]
 ) {
-
-    // Todas as músicas foram distribuídas
+    // Caso base:
+    // todas as músicas foram distribuídas
     if (indice == quantidade) {
         return 1;
     }
@@ -35,7 +35,8 @@ int backtracking(
                 tempoA + musicas[indice].duracaoSegundos,
                 tempoB,
                 capacidadeLado,
-                lado)) {
+                lado
+            )) {
 
             return 1;
         }
@@ -53,18 +54,18 @@ int backtracking(
                 tempoA,
                 tempoB + musicas[indice].duracaoSegundos,
                 capacidadeLado,
-                lado)) {
+                lado
+            )) {
 
             return 1;
         }
     }
 
-    // Nenhuma das possibilidades funcionou
+    // Nenhuma escolha funcionou
     lado[indice] = 0;
 
     return 0;
 }
-
 
 int resolver(
     Musica musicas[],
@@ -72,9 +73,10 @@ int resolver(
     int duracaoFitaMinutos,
     int lado[]
 ) {
-
-    // L é a duração TOTAL dos dois lados da fita
-    int capacidadeLado = (duracaoFitaMinutos * 60) / 2;
+    // A duração L representa a fita inteira.
+    // Portanto, cada lado possui metade.
+    int capacidadeLado =
+        (duracaoFitaMinutos * 60) / 2;
 
     for (int i = 0; i < quantidade; i++) {
         lado[i] = 0;
