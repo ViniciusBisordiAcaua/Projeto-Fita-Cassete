@@ -89,10 +89,10 @@ Responsável por:
 projeto-fita/
 │
 ├── src/
-│   ├── Musica.java
-│   ├── LeitorArquivo.java
-│   ├── Solver.java
-│   └── Main.java
+│   ├── Musica.c
+│   ├── LeitorArquivo.c
+│   ├── Solver.c
+│   └── Main.c
 │
 ├── tape.in
 │
