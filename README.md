@@ -2,15 +2,15 @@
 
 ## Projeto e Análise de Algoritmos II
 
-Projeto desenvolvido para a disciplina de **Projeto e Análise de Algoritmos II** da Universidade Presbiteriana Mackenzie.
+Projeto desenvolvido para a disciplina de Projeto e Análise de Algoritmos II da Universidade Presbiteriana Mackenzie.
 
 ## Objetivo
 
 Desenvolver um programa capaz de distribuir uma lista de músicas entre os dois lados de uma fita cassete.
 
-Cada música possui uma duração em minutos e segundos, e os lados **A** e **B** possuem a mesma capacidade.
+Cada música possui uma duração em minutos e segundos, e os lados A e B possuem a mesma capacidade.
 
-O programa deverá encontrar uma combinação que permita gravar **todas as músicas** sem ultrapassar o limite de duração de cada lado da fita.
+O programa deverá encontrar uma combinação que permita gravar todas as músicas** sem ultrapassar o limite de duração de cada lado da fita.
 
 Caso não exista uma combinação possível, o programa deverá informar que não é possível gravar todas as músicas.
 
@@ -43,9 +43,9 @@ Impossivel gravar as musicas nessa fita.
 
 ## Integrantes
 
-* **Integrante 1:** Caio Henrique Santos Carvalho / RA: 1042540
-* **Integrante 2:** Helen Santana de Araujo Teixeira / RA: 10742524
-* **Integrante 3:** Vinicius Bisordi Acauã / RA: 10739883
+* Caio Henrique Santos Carvalho / RA: 10425408
+* Helen Santana de Araujo Teixeira / RA: 10742524
+* Vinicius Bisordi Acauã / RA: 10739883
 
 ## Divisão das atividades
 
