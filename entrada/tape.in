@@ -1,10 +1,12 @@
-2
-30 4
+2       ← quantidade de casos
+
+30 4    ← Caso 1: fita de 30 min, 4 músicas
 3 11
 4 45
 13 45
 6 8
-60 6
+
+60 6    ← Caso 2: fita de 60 min, 6 músicas
 20 44
 4 36
 7 18
