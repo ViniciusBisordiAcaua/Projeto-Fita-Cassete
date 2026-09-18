@@ -38,7 +38,7 @@ int lerCaso(FILE *arquivo, int *duracaoFita, int *quantidadeMusicas, Musica musi
 
         musicas[i].minutos = minutos;
         musicas[i].segundos = segundos;
-        musicas[i].duracaoSegundos = converterDuracao(minutos, segundos);
+        musicas[i].duracaoSegundos = minutos * 60 + segundos;
 
     }
 
